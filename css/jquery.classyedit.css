@@ -1,0 +1,91 @@
+
+*:focus {
+    outline: none;  
+}
+.classyedit {
+    display: block;
+	background: #FFF;
+	border-radius: 5px;
+	word-wrap: normal;
+	border: none;
+	outline: 1px solid #ececec;
+	color: #5fd5a3d;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.classyedit .toolbar {
+    position:relative;
+    z-index:10;
+    height:auto;
+    background: #337ab7;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius: 3px;
+    overflow:hidden;
+    display:none;
+}
+.classyedit .toolbar .button {
+    width:36px;
+    height:34px;
+    float:left;
+    background-image:url('../images/break.png');
+    background-repeat:no-repeat;
+    background-position:right 4px;
+    cursor:pointer;
+}
+.classyedit .toolbar .button:hover,
+.classyedit .toolbar .button.on {
+    background-color:#286090;
+}
+.classyedit .toolbar .button.first:hover {
+    -moz-border-top-left-radius:3px;
+    -webkit-border-top-left-radius:3px;
+    border-top-left-radius: 3px;
+}
+.classyedit .toolbar .button div,
+.classyedit .toolbar .button a {
+    background-repeat:no-repeat;
+    background-position:center center;
+    display:block;
+    width:100%;
+    height:34px;
+}
+.classyedit .toolbar .button [command='underline'] {
+    background-image:url('../images/underline.png');
+}
+
+.classyedit .toolbar .button [command='italic'] {
+    background-image:url('../images/italic.png');
+}
+
+.classyedit .toolbar .button [command='bold'] {
+    background-image:url('../images/bold.png');
+}
+
+.classyedit .toolbar .button [command='insertUnorderedList'] {
+    background-image:url('../images/bullet.png');
+}
+
+.classyedit .toolbar .button [command='html'] {
+    background-image:url('../images/html.png');
+}
+
+.classyedit .toolbar .button [command='href'] {
+    background-image:url('../images/href.png');
+}
+
+.classyedit .editor {
+    position:relative;
+    z-index:1;
+    min-height:150px;
+    padding:10px;
+}
+.classyedit .html_editor {
+    width:95%;
+    resize: none;
+    padding:10px;
+    border:0px;
+    display:none;
+    min-height:140px;
+}
